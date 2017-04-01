@@ -1,0 +1,186 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x03\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x14\x00c\x00h\x00a\x00p\x00t\x00e\x00r\x00_\x001\x002\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x14\x00c\x00h\x00a\x00p\x00t\x00e\x00r\x00_\x001\x002\x00\x00\x00\x0c\x00s\x00t\x00a\x00b\x00l\x00e\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x14\x00c\x00h\x00a\x00p\x00t\x00e\x00r\x00_\x001\x002\x00\x00\x00\x0e\x00v\x00e\x00g\x00n\x00e\x00w\x00s)
+
+[CustomDefinesAndIncludes][ProjectPath0]
+Path=.
+parseAmbiguousAsCPP=true
+parserArguments=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++11
+parserArgumentsC=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c99
+
+[CustomDefinesAndIncludes][ProjectPath0][Compiler]
+Name=GCC
+
+[Filters]
+size=27
+
+[Filters][0]
+inclusive=0
+pattern=.*
+targets=3
+
+[Filters][1]
+inclusive=1
+pattern=.gitignore
+targets=1
+
+[Filters][10]
+inclusive=0
+pattern=.bzr
+targets=2
+
+[Filters][11]
+inclusive=0
+pattern=__pycache__
+targets=2
+
+[Filters][12]
+inclusive=0
+pattern=*.o
+targets=1
+
+[Filters][13]
+inclusive=0
+pattern=*.a
+targets=1
+
+[Filters][14]
+inclusive=0
+pattern=*.so
+targets=1
+
+[Filters][15]
+inclusive=0
+pattern=*.so.*
+targets=1
+
+[Filters][16]
+inclusive=0
+pattern=moc_*.cpp
+targets=1
+
+[Filters][17]
+inclusive=0
+pattern=*.moc
+targets=1
+
+[Filters][18]
+inclusive=0
+pattern=ui_*.h
+targets=1
+
+[Filters][19]
+inclusive=0
+pattern=qrc_*.cpp
+targets=1
+
+[Filters][2]
+inclusive=1
+pattern=.gitmodules
+targets=1
+
+[Filters][20]
+inclusive=0
+pattern=*~
+targets=1
+
+[Filters][21]
+inclusive=0
+pattern=*.orig
+targets=1
+
+[Filters][22]
+inclusive=0
+pattern=.*.kate-swp
+targets=1
+
+[Filters][23]
+inclusive=0
+pattern=.*.swp
+targets=1
+
+[Filters][24]
+inclusive=0
+pattern=*.pyc
+targets=1
+
+[Filters][25]
+inclusive=0
+pattern=*.pyo
+targets=1
+
+[Filters][3]
+inclusive=0
+pattern=.git
+targets=2
+
+[Filters][4]
+inclusive=0
+pattern=CVS
+targets=2
+
+[Filters][5]
+inclusive=0
+pattern=.svn
+targets=2
+
+[Filters][6]
+inclusive=0
+pattern=_svn
+targets=2
+
+[Filters][7]
+inclusive=0
+pattern=SCCS
+targets=2
+
+[Filters][8]
+inclusive=0
+pattern=_darcs
+targets=2
+
+[Filters][9]
+inclusive=0
+pattern=.hg
+targets=2
+
+[Launch]
+Launch Configurations=Launch Configuration 0,Launch Configuration 1
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=New Compiled Binary Launcher
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=
+Executable=file:///home/dgusev/projects/lang_cpp/chapter_12/stringbad
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[Launch][Launch Configuration 1]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=vegnews
+Type=Native Application
+
+[Launch][Launch Configuration 1][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=
+Executable=file:///home/dgusev/projects/lang_cpp/chapter_12/vegnews
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=
+Use External Terminal=true
+Working Directory=
+isExecutable=true
+
+[Project]
+VersionControlSupport=kdevgit
